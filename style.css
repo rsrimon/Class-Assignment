@@ -1,0 +1,460 @@
+/* ======== Default CSS ======== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.container-2{
+    max-width: 1250px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/* ======== Header Section SCC ========= */
+
+.header{
+    background-color: #000;
+    padding-top: 10px;
+}
+.header-logo{
+    float: left;
+    width: 30%;
+}
+.header-logo img{
+    width: 100px;
+}
+
+/* ======== Menu Section CSS ======== */
+
+.menu{
+    float: right;
+    width: 70%;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0 15px;
+    line-height: 40px;
+    margin-bottom: 0;
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 0%;
+    width: 0%;
+    bottom: 12px;
+    left: 10px;
+    transition: .5s;
+}
+.menu ul li a:hover::after{
+    height: 4%;
+    width: 75%;
+}
+
+/* ======== DropDown Menu CSS ======== */
+
+.menu ul li ul{
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: 0%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    transition: .5s;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 110%;
+    transform: scaleY(1);
+}
+.menu ul li ul li{
+    display: block;
+    background-color: black;
+    transition: .7s;
+}
+.menu ul li ul li:first-child{
+    border-top: 5px solid white;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 0%;
+    width: 0%;
+    bottom: 12px;
+    left: 10px;
+    transition: .5s;
+}
+.menu ul li ul li a:hover::after{
+    height: 4%;
+    width: 47%;
+}
+.menu ul li ul li:hover a{
+    color: #000;
+}
+.menu ul li ul li:hover{
+    background-color: white;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-image: url(./Image/a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner-text h1{
+    color: #223127;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.banner-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+.a-1{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .4s;
+}
+.a-1:hover{
+    color: #000;
+    background-color: white;
+}
+.a-2{
+    display: inline-block;
+    color: #000;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    transition: .4s;
+    margin: 20px;
+}
+.a-2:hover{
+    color: white;
+    background-color: #000;
+}
+
+/* ======== About Section CSS ======== */
+
+.about{
+    background-color: #87a471;
+    padding-bottom: 50px;
+}
+.about h1{
+    color: #e8dfda;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 1px 6px #e8dfda;
+    padding: 20px 0;
+    position: relative;
+}
+.about h1::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #e8dfda;
+    width: 30%;
+    bottom: 15px;
+    left: 35%;
+}
+.about-laft{
+    float: left;
+    width: 60%;
+}
+.about-laft p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
+    padding-left: 100px;
+    line-height: 25px;
+}
+.about-right{
+    float: right;
+    width: 40%;
+    margin-top: 15px;
+}
+.about-image{
+    width: 300px;
+    margin-left: 100px;
+}
+
+/* ======== Contant-1 Section CSS ======== */
+
+.contant-1{
+    background-color: #606a64;
+    padding: 30px 0;
+}
+.contant-text h1{
+    color: #e8dfda;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 1px 6px #e8dfda;
+    margin: 10px 0;
+    position: relative;
+}
+.contant-text h1::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #e8dfda;
+    width: 26%;
+    bottom: -5px;
+    left: 37%;
+}
+.contant-text h3{
+    color: #dfe0e1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0;
+
+}
+.contant-text p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 650px;
+    margin: auto;
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+.item{
+    float: left;
+    width: 28%;
+    background-color: white;
+    margin: 0 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.item .image{
+    float: left;
+    height: 150px;
+    margin-right: 20px;
+}
+.item-text h3{
+    color: #506a85;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.item-text p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ======== Work Section CSS ======== */
+
+.work{
+    background-color: #87a471;
+    padding: 80px 0;
+}
+.work-text h3{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.work-text p{
+    color: #dfe0e1;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 80px;
+}
+.work-item-left{
+    float: left;
+    width: 48%;
+    margin-right: 40px;
+    border: 1px solid #ddd;
+}
+.work-item-left img{
+    width: 100%;
+}
+.work-item-left p{
+    color: #546e83;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.work-item-left span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.work-item-right{
+    float: left;
+    width: 48%;
+    border: 1px solid #ddd;
+}
+.work-item-right p{
+    color: #546e83;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.work-item-right span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.work-item-2{
+    float: left;
+    width: 22%;
+    margin-top: 50px;
+    margin-right: 45px;
+}
+.work-item-3{
+    float: left;
+    width: 22%;
+    margin-top: 50px;
+}
+
+/* ======== Team Section CSS ======== */
+
+.team{
+    background-color: #5b9776;
+    padding-top: 30px;
+}
+.team-text h3{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 30px 0;
+    position: relative;
+}
+.team-text h3::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #e8dfda;
+    width: 26%;
+    bottom: -10px;
+    left: 37%;
+}
+.tean-contact{
+    float: left;
+    width: 30%;
+    margin: 19px;
+}
+.socal-menu{
+    margin: 10px 0;
+}
+.socal-menu ul{
+    list-style: none;
+}
+.socal-menu ul li{
+    display: inline-block;
+}
+.socal-menu ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: .6s;
+}
+.socal-menu ul li a:hover{
+    color: #000;
+}
+
+/* ======== Contant-2 Section CSS ======== */
+
+.contant-2{
+    background-color: #606a64;
+    padding: 100px;
+}
+.contant-2-text h3{
+    color: #e4e6e8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.contant-2-text p{
+    color: #c8cac8;
+    width: 640px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.contant-2-text a{
+    display: inline-block;
+    color: white;
+    background-color: #00bc9c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contant-2-text a:hover{
+    background-color: #4f6a85;
+}
+
+/* ======== Footer Section CSS ======== */
+
+.footer{
+    background-color: #000;
+    padding: 30px 0;
+}
+.footer h4{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
